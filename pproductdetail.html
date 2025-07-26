@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="h.png" alt="">
+    </header>
+    <section class="product">
+        <div class="all-product">
+            <div class="thumbnail-vertical-container">
+                <button class="slider-btn up" onclick="scrollVertical(-1)">&#8593;</button>
+
+                <div class="thumbnail-vertical" id="thumbnailVertical">
+                    <img src="apple 2.webp" alt="">
+                    <img src="apple 3.webp" alt="">
+                    <img src="apple 4.webp" alt="">
+                    <img src="apple 5.webp" alt="">
+                    <img src="apple 4.webp" alt="">
+                    <img src="apple 3.webp" alt="">
+
+                </div>
+
+                <button class="slider-btn down" onclick="scrollVertical(1)">&#8595;</button>
+            </div>
+            <div class="main-pic">
+                <img id="apple-pic" src="apple 1.jpeg" alt="">
+            </div>
+            <div class="details">
+                <span class="title">
+                    <strong>
+                        شناسه محصول 2342452609vgfwg
+                    </strong>
+                    <h2>آیفون 16 پرومکس</h2>
+                </span>
+
+                <!-- the line -->
+                <hr style="max-width: 300px;">
+                <h4 style="text-align: right; font-family: 'Noto Sans Arabic', sans-serif;">قیمت : 87/000/000تومان</h4>
+                <strike
+                    style="text-align: right;  color: rgb(173, 173, 173); font-family: 'Noto Sans Arabic', sans-serif;">88/000/000تومان</strike>
+                <div style="display: flex;align-items: center; gap: 20px;" class="colors">
+                    <strong style="text-align: center;  font-family: 'Noto Sans Arabic', sans-serif;">رنگ های
+                        محصول</strong>
+                    <div class="color-and-text"><span
+                            style="display: inline-flex; justify-content: center; align-items: center; width:30px; height:30px; background-color: #9CAEF6; border-radius: 50%;"></span>
+                        <strong>آبی</strong>
+                    </div>
+                    <div class="color-and-text"><span
+                            style="display: inline-flex; justify-content: center; align-items: center; width:30px; height:30px; background-color: #f8a6f1; border-radius: 50%;"></span>
+                        <strong>آبی</strong>
+                    </div>
+                    <div class="color-and-text"><span
+                            style="display: inline-flex; justify-content: center; align-items: center; width:30px; height:30px; background-color: #abfdc0; border-radius: 50%;"></span>
+                        <strong>آبی</strong>
+                    </div>
+                    <div class="color-and-text"><span
+                            style="display: inline-flex; justify-content: center; align-items: center; width:30px; height:30px; background-color: #f6cf9c; border-radius: 50%;"></span>
+                        <strong>آبی</strong>
+                    </div>
+
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;   width: 70%;"
+                    class="GB">
+                    <div class="box">
+                        <b>128GBحافظه داخل</b>
+                    </div>
+                    <div class="box">
+                        <b>128GBحافظه داخل</b>
+                    </div>
+                    <div class="box">
+                        <b>128GBحافظه داخل</b>
+                    </div>
+                    <div class="box">
+                        <b>128GBحافظه داخل</b>
+                    </div>
+                </div>
+                <div class="buy-button">
+                    <button class="add" type="button">افزودن به سبد خرید</button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
+                    </svg>
+                    <div class="input">
+                        <button id="decrement" onclick="stepper(this)">-</button>
+                        <input type="number" min="1" max="20" step="1" value="1" id="input-number" readonly>
+                        <button id="increment" onclick="stepper(this)">+</button>
+                    </div>
+                </div>
+                <div class="hr-text" data-content="ویژگی های محصول"></div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">ابعاد</th>
+                            <th scope="col">First</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">وزن</th>
+                            <th>Mark</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">حسگرها</th>
+                            <th>Jacob</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">تعداد سیمکارت</th>
+                            <th>Jacob</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">جنس بدنه</th>
+                            <th>Jacob</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">پردازنده گرافیکی</th>
+                            <th>Jacob</th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: center;" colspan="2">گارانتی 18 ماهه</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const myInput = document.getElementById("input-number");
+
+        function stepper(btn) {
+            let id = btn.getAttribute("id");
+            let min = parseInt(myInput.getAttribute("min"));
+            let max = parseInt(myInput.getAttribute("max"));
+            let step = parseInt(myInput.getAttribute("step"));
+            let value = parseInt(myInput.value);
+
+            let calcStep = (id === "increment") ? step : -step;
+            let newValue = value + calcStep;
+
+            if (newValue >= min && newValue <= max) {
+                myInput.value = newValue;
+            }
+        }
+        // sider
+
+        function scrollVertical(direction) {
+            const slider = document.getElementById('thumbnailVertical');
+            const scrollAmount = 160; // کمی بیشتر از ارتفاع تصویر
+
+            slider.scrollBy({
+                top: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+
+        //
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

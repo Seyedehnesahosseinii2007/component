@@ -1,0 +1,153 @@
+body {
+    font-size: 15pt;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-pictures {
+
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pic-one,
+.pic-two,
+.pic-three,
+.pic-four {
+    width: 150px;
+    border: 1px solid #ccc;
+}
+
+.thumbnail-vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    width: 15%;
+    gap: 10px;
+
+    border-radius: 15px 15px 15px 15px !important;
+    padding: 30px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.thumbnail-vertical {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 500px;
+}
+
+.thumbnail-vertical img {
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.slider-btn {
+    padding: 8px 12px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.slider-btn:hover {
+    background-color: #ccc;
+}
+
+.product {
+    width: 100%;
+    height: 550;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+}
+
+.all-product {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid #ccc;
+    border-radius: 15px 15px 15px 15px !important;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fafbff;
+}
+
+.main-pic {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#apple-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 15px 15px !important;
+    background-size: cover;
+
+    background-position: center;
+}
+
+.details {
+    width: 55%;
+    height: auto;
+}
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.hr-text:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: #818078;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    background-color: #fcfcfa;
+}

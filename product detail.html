@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جزئیات محصول</title>
+    <link rel="stylesheet" href="product detail.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="h.png" alt="">
+    </header>
+    <div style="margin-top: 15px;" class="all-details">
+        <div class="main-picture">
+            <div class="the-main"><img class="big-pic" src="apple 1.jpeg" alt=""></div>
+            <div class="thumbnail-vertical-container">
+                <button class="slider-btn up" onclick="scrollVertical(-1)">&#8593;</button>
+
+                <div class="thumbnail-vertical" id="thumbnailVertical">
+                    <img src="apple 2.webp" alt="">
+                    <img src="apple 3.webp" alt="">
+                    <img src="apple 4.webp" alt="">
+                    <img src="apple 5.webp" alt="">
+                    <img src="apple 4.webp" alt="">
+                    <img src="apple 3.webp" alt="">
+
+                </div>
+
+                <button class="slider-btn down" onclick="scrollVertical(1)">&#8595;</button>
+            </div>
+
+
+        </div>
+        <div class="product-details-text">
+            <h6 style="font-family: 'Noto Sans Arabic', sans-serif;" id="id-product">شناسه محصول765865ikdydr75kd </h6>
+            <h2 style="border-bottom: 1px solid black; width: fit-content;" id="name">Iphone 16</h2>
+
+
+            <div style="display: flex;align-items: center; gap: 20px;" class="colors">
+                <strong style="text-align: center;  font-family: 'Noto Sans Arabic', sans-serif;">رنگ های محصول</strong>
+                <span
+                    style="display: inline-flex; justify-content: center; align-items: center; width:30px; height:30px; background-color: #F3B6DD; border-radius: 50%;"></span>
+                <span
+                    style="display: inline-flex; justify-content: center; align-items: center; width:30px; height:30px; background-color: #9CAEF6; border-radius: 50%;"></span>
+                <span
+                    style="display: inline-flex; justify-content: center; align-items: center; width:30px; height:30px; background-color: #4F4F4F; border-radius: 50%;"></span>
+                <span
+                    style="display: inline-flex; justify-content: center; align-items: center; width:30px; height:30px; background-color: #B8DBD6; border-radius: 50%;"></span>
+            </div>
+            <h4 style="text-align: right; font-family: 'Noto Sans Arabic', sans-serif;">قیمت : 87/000/000تومان</h4>
+            <strike
+                style="text-align: right;  color: red; font-family: 'Noto Sans Arabic', sans-serif;">88/000/000تومان</strike>
+            <div class="buy-button">
+                <button class="add" type="button">افزودن به سبد خرید</button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
+                </svg>
+                <div class="input">
+                    <button id="decrement" onclick="stepper(this)">-</button>
+                    <input type="number" min="1" max="20" step="1" value="1" id="input-number" readonly>
+                    <button id="increment" onclick="stepper(this)">+</button>
+                </div>
+            </div>
+
+            <div class="icons">
+                <!-- truck -->
+                <div class="truck">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="orange" class="bi bi-truck"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                    </svg>
+                    <strong style="color: orange;">ارسال سریع کالا</strong>
+                </div>
+
+                <!-- ghsti -->
+                <div class="ghestoi">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="rgb(71, 141, 71)"
+                        class="bi bi-cash-coin" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                        <path
+                            d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                        <path
+                            d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                    </svg>
+                    <strong style="color: rgb(71, 141, 71);">خرید اقساطی</strong>
+                </div>
+                <div class="guaranti"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        fill="rgb(75, 135, 202)" class="bi bi-shield-check" viewBox="0 0 16 16">
+                        <path
+                            d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                        <path
+                            d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                    </svg>
+                    <strong style="color:rgb(75, 135, 202) ;">با ضمانت و گارانتی 18 ماهه</strong>
+                </div>
+                <!-- guaranti -->
+
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;   width: 70%;" class="GB">
+                <div class="box">
+                    <b>128GBحافظه داخل</b>
+                </div>
+                <div class="box">
+                    <b>128GBحافظه داخل</b>
+                </div>
+                <div class="box">
+                    <b>128GBحافظه داخل</b>
+                </div>
+                <div class="box">
+                    <b>128GBحافظه داخل</b>
+                </div>
+            </div>
+            <div class="hr-text" data-content="ویژگی های محصول"></div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">ابعاد</th>
+                        <th scope="col">First</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">وزن</th>
+                        <th>Mark</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">حسگرها</th>
+                        <th>Jacob</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">تعداد سیمکارت</th>
+                        <th>Jacob</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">جنس بدنه</th>
+                        <th>Jacob</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">پردازنده گرافیکی</th>
+                        <th>Jacob</th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: center;" colspan="2">گارانتی 18 ماهه</th>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <h4 style="text-align: left; margin-left: 70px;">قیمت : 87/000/000تومان</h4>
+            <strike style="text-align: left; margin-left: 70px; color: red;">88/000/000تومان</strike>
+            <div class="buy-button">
+
+                <button type="button">افزودن به سبد خرید</button>
+                <img id="input" src="input.png" alt="">
+            </div>
+        </div> -->
+
+        </div>
+
+    </div> <!-- choose the tabs -->
+    <!-- start tab -->
+    <div class="tb">
+        <ul class="all-items">
+            <li data-tab-target="#details" class="item1">توضیحات تکمیلی</li>
+            <li data-tab-target="#star" class="item2">امتیاز محصول</li>
+            <li data-tab-target="#comment" class="item3">نظرات محصول</li>
+        </ul>
+        <!-- all the tabs  -->
+        <div class="tab-content">
+            <!-- تب نظرات تکمیلی  -->
+            <div id="details" data-tab-content class="active">
+                <!-- تایتل متن اصلی  -->
+                <h1 class="animation-title">بررسی گوشی موبایل آیفون 13 پرومکس نات اکتیو</h1>
+                <!-- متمن اصلی  -->
+                <p class="animation-text">یفون 13 پرومکس نات اکتیو یکی از پرچم‌داران اسبق گوشی‌های آیفون به شمار
+                    می‌رود.
+                    این
+                    محصول در
+                    شهریور ماه سال 1400 رونمایی
+                    شد. آیفون 13 پرومکس نات اکتیو در مقایسه با نسل قبلی خود تغییرات بهبود یا
+                    بزرگ‌ترین تغییر در مقایسه با آیفون 12 پرومکس به بخش دوربین‌ها و ظرفیت باتری اختصاص داده شده است.
+                    پیش
+                    از
+                    آن که به بررسی
+                    این محصول بپردازیم، قیمت آیفون 13 پرومکس نات اکتیو را می‌توانید در سایت فروشگاه اینترنتی تلکام
+                    مشاهده
+                    کنید.</p>
+                <p class="animation-text">یفون 13 پرومکس نات اکتیو یکی از پرچم‌داران اسبق گوشی‌های آیفون به شمار
+                    می‌رود.
+                    این
+                    محصول در
+                    شهریور ماه سال 1400 رونمایی
+                    شد. آیفون 13 پرومکس نات اکتیو در مقایسه با نسل قبلی خود تغییرات بهبود یا
+                    بزرگ‌ترین تغییر در مقایسه با آیفون 12 پرومکس به بخش دوربین‌ها و ظرفیت باتری اختصاص داده شده است.
+                    پیش
+                    از
+                    آن که به بررسی
+                    این محصول بپردازیم، قیمت آیفون 13 پرومکس نات اکتیو را می‌توانید در سایت فروشگاه اینترنتی تلکام
+                    مشاهده
+                    کنید.</p>
+                <p class="animation-text">یفون 13 پرومکس نات اکتیو یکی از پرچم‌داران اسبق گوشی‌های آیفون به شمار
+                    می‌رود.
+                    این
+                    محصول در
+                    شهریور ماه سال 1400 رونمایی
+                    شد. آیفون 13 پرومکس نات اکتیو در مقایسه با نسل قبلی خود تغییرات بهبود یا
+                    بزرگ‌ترین تغییر در مقایسه با آیفون 12 پرومکس به بخش دوربین‌ها و ظرفیت باتری اختصاص داده شده است.
+                    پیش
+                    از
+                    آن که به بررسی
+                    این محصول بپردازیم، قیمت آیفون 13 پرومکس نات اکتیو را می‌توانید در سایت فروشگاه اینترنتی تلکام
+                    مشاهده
+                    کنید.</p>
+                <p class="animation-text">یفون 13 پرومکس نات اکتیو یکی از پرچم‌داران اسبق گوشی‌های آیفون به شمار
+                    می‌رود.
+                    این
+                    محصول در
+                    شهریور ماه سال 1400 رونمایی
+                    شد. آیفون 13 پرومکس نات اکتیو در مقایسه با نسل قبلی خود تغییرات بهبود یا
+                    بزرگ‌ترین تغییر در مقایسه با آیفون 12 پرومکس به بخش دوربین‌ها و ظرفیت باتری اختصاص داده شده است.
+                    پیش
+                    از
+                    آن که به بررسی
+                    این محصول بپردازیم، قیمت آیفون 13 پرومکس نات اکتیو را می‌توانید در سایت فروشگاه اینترنتی تلکام
+                    مشاهده
+                    کنید.</p>
+                <p class="animation-text">یفون 13 پرومکس نات اکتیو یکی از پرچم‌داران اسبق گوشی‌های آیفون به شمار
+                    می‌رود.
+                    این
+                    محصول در
+                    شهریور ماه سال 1400 رونمایی
+                    شد. آیفون 13 پرومکس نات اکتیو در مقایسه با نسل قبلی خود تغییرات بهبود یا
+                    بزرگ‌ترین تغییر در مقایسه با آیفون 12 پرومکس به بخش دوربین‌ها و ظرفیت باتری اختصاص داده شده است.
+                    پیش
+                    از
+                    آن که به بررسی
+                    این محصول بپردازیم، قیمت آیفون 13 پرومکس نات اکتیو را می‌توانید در سایت فروشگاه اینترنتی تلکام
+                    مشاهده
+                    کنید.</p>
+                <p class="animation-text">یفون 13 پرومکس نات اکتیو یکی از پرچم‌داران اسبق گوشی‌های آیفون به شمار
+                    می‌رود.
+                    این
+                    محصول در
+                    شهریور ماه سال 1400 رونمایی
+                    شد. آیفون 13 پرومکس نات اکتیو در مقایسه با نسل قبلی خود تغییرات بهبود یا
+                    بزرگ‌ترین تغییر در مقایسه با آیفون 12 پرومکس به بخش دوربین‌ها و ظرفیت باتری اختصاص داده شده است.
+                    پیش
+                    از
+                    آن که به بررسی
+                    این محصول بپردازیم، قیمت آیفون 13 پرومکس نات اکتیو را می‌توانید در سایت فروشگاه اینترنتی تلکام
+                    مشاهده
+                    کنید.</p>
+            </div>
+            <!-- تب امتیاز محصول  -->
+            <div id="star" data-tab-content>
+                <h1 class="animation-title">بررسی گوشی موبایل آیفون 13 پرومکس نات اکتیو</h1>
+                <p class="animation-text">یفون 13 پرومکس نات اکتیو یکی از پرچم‌داران اسبق گوشی‌های آیفون به شمار
+                    می‌رود.
+                    این
+                    محصول در
+                    شهریور ماه سال 1400 رونمایی
+                    شد. آیفون 13 پرومکس نات اکتیو در مقایسه با نسل قبلی خود تغییرات بهبود یا
+                    بزرگ‌ترین تغییر در مقایسه با آیفون 12 پرومکس به بخش دوربین‌ها و ظرفیت باتری اختصاص داده شده است.
+                    پیش
+                    از
+                    آن که به بررسی
+                    این محصول بپردازیم، قیمت آیفون 13 پرومکس نات اکتیو را می‌توانید در سایت فروشگاه اینترنتی تلکام
+                    مشاهده
+                    کنید.</p>
+            </div>
+            <!-- نظرات کاربران تب -->
+            <div id="comment" data-tab-content>
+                <h1 class="animation-title">بررسی گوشی موبایل آیفون 13 پرومکس نات اکتیو</h1>
+                <p class="animation-text">یفون 13 پرومکس نات اکتیو یکی از پرچم‌داران اسبق گوشی‌های آیفون به شمار
+                    می‌رود.
+                    این
+                    محصول در
+                    شهریور ماه سال 1400 رونمایی
+                    شد. آیفون 13 پرومکس نات اکتیو در مقایسه با نسل قبلی خود تغییرات بهبود یا
+                    بزرگ‌ترین تغییر در مقایسه با آیفون 12 پرومکس به بخش دوربین‌ها و ظرفیت باتری اختصاص داده شده است.
+                    پیش
+                    از
+                    آن که به بررسی
+                    این محصول بپردازیم، قیمت آیفون 13 پرومکس نات اکتیو را می‌توانید در سایت فروشگاه اینترنتی تلکام
+                    مشاهده
+                    کنید.</p>
+            </div>
+        </div>
+        <footer>
+
+
+        </footer>
+        <script>
+            const myInput = document.getElementById("input-number");
+
+            function stepper(btn) {
+                let id = btn.getAttribute("id");
+                let min = parseInt(myInput.getAttribute("min"));
+                let max = parseInt(myInput.getAttribute("max"));
+                let step = parseInt(myInput.getAttribute("step"));
+                let value = parseInt(myInput.value);
+
+                let calcStep = (id === "increment") ? step : -step;
+                let newValue = value + calcStep;
+
+                if (newValue >= min && newValue <= max) {
+                    myInput.value = newValue;
+                }
+            }
+            // sider
+
+            function scrollVertical(direction) {
+                const slider = document.getElementById('thumbnailVertical');
+                const scrollAmount = 160; // کمی بیشتر از ارتفاع تصویر
+
+                slider.scrollBy({
+                    top: direction * scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+
+
+            // start tab
+            // for choose the tabs
+            const tabs = document.querySelectorAll('[data-tab-target]');
+            const tabContents = document.querySelectorAll('[data-tab-content]');
+
+            tabs.forEach(tab => {
+                // choose each of the tabs elements to show and hide
+                tab.addEventListener('click', () => {
+                    // click the tabs
+                    const target = document.querySelector(tab.dataset.tabTarget);
+                    tabContents.forEach(tabContent => {
+                        tabContent.classList.remove('active');
+                    });
+                    // active and inactive each class and tabs
+                    if (target) {
+                        target.classList.add('active');
+                    }
+                });
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
