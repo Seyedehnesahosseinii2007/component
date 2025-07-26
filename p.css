@@ -1,6 +1,6 @@
 body {
     font-size: 15pt;
-    font-family: 'Noto Sans Arabic', sans-serif;
+    font-family: 'Zain', sans-serif;
     direction: rtl;
     display: flex;
     justify-content: center;
@@ -81,6 +81,7 @@ body {
     flex-direction: row;
     padding: 10px;
     gap: 20px;
+    font-family: "Zain", sans-serif;
 }
 
 .all-product {
@@ -119,7 +120,9 @@ body {
 .details {
     width: 55%;
     height: auto;
+    font-family: "Zain", sans-serif;
 }
+
 .hr-text {
     line-height: 1em;
     position: relative;
@@ -129,7 +132,7 @@ body {
     text-align: center;
     height: 1.5em;
     opacity: .5;
-    font-family: 'Noto Sans Arabic', sans-serif;
+    font-family: 'Zain', sans-serif;
 }
 
 .hr-text:before {
@@ -150,4 +153,59 @@ body {
     padding: 0 .5em;
     line-height: 1.5em;
     background-color: #fcfcfa;
+}
+
+.color-and-text {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 5px;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid #ccc;
+    border-radius: 10px 10px 10px 10px !important;
+    background-size: cover;
+    height: 40px;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.dotted-table {
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: separate;
+    /* جداسازی خطوط */
+    border-spacing: 0 8px;
+    /* فاصله عمودی بین ردیف‌ها */
+    font-family: "Zain", sans-serif;
+    background-color: #fff;
+}
+
+table {
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px !important;
+}
+
+.dotted-table td {
+    padding: 14px 20px;
+    text-align: right;
+    font-size: 16px;
+    color: #444;
+    background-color: #f9f9f9c9;
+    border-bottom: 2px dotted #fc044241;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dotted-table tr:last-child td {
+    border-bottom: none;
+    /* حذف خط آخر */
+}
+
+#title {
+    font-family: "Zain", sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
 }
