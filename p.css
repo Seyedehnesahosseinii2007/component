@@ -99,7 +99,7 @@ body {
 }
 
 .main-pic {
-    width: 30%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -156,7 +156,7 @@ body {
 }
 
 .color-and-text {
-    width: 90px;
+    width: 120px;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -209,3 +209,180 @@ table {
     font-size: 15pt;
     font-weight: bold;
 }
+
+.buy-card {
+    width: 500px;
+    height: min-content;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px !important;
+    border: 2px solid #ccc;
+
+}
+
+.accept {
+    width: 100%;
+    height: min-content;
+    gap: 15px;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+    width: 95%;
+}
+
+.price-money {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buy-button {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    gap: 15px;
+    padding: 20px;
+}
+
+.discount-badge {
+    background: red;
+    color: white;
+    width: 30px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.old-price {
+    color: #888;
+    font-size: 16px;
+}
+
+.new-price {
+    color: #000;
+    font-weight: bold;
+    font-size: 18pt;
+    margin-top: 6px;
+}
+
+.add {
+    background-color: #FC0444;
+    border-radius: 5px 5px 5px 5px !important;
+    font-weight: 500;
+    border: 3px solid rgb(192, 1, 1);
+    color: white;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s ease;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.add:hover {
+    background-color: white;
+    border: 3px solid rgb(250, 95, 95);
+    color: #FC0444;
+    font-weight: 500;
+    padding: 5px;
+    transform: scale(1.04);
+    transition: all 0.5s ease;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    text-align: center;
+    font-size: 12pt;
+    color: black;
+    width: 60px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid rgb(170, 169, 169);
+    font-weight: 600;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#decrement,
+#increment {
+    color: white;
+    background-color: #ff7a7a;
+    border: 3px solid rgb(255, 139, 139);
+    font-size: 13pt;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: center;
+    align-self: auto;
+    width: 29px;
+}
+
+.custom-check {
+    display: flex;
+    flex-direction: row;
+    /* عناصر از راست به چپ نرن، در حالت عادی باشن */
+    justify-content: flex-start;
+    /* بچسبن به سمت راست در حالت RTL */
+    align-items: center;
+    gap: 10px;
+
+    direction: rtl;
+
+    font-size: 16px;
+    padding: 12px 16px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #007bff;
+}
+
+.discount-badge {
+    width: 100px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row-reverse;
+    gap: 50px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
